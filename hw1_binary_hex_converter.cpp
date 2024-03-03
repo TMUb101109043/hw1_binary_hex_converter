@@ -4,6 +4,10 @@ using namespace std;
 int main(){
     int num; //the input number 0-255, so eight digits are prepared
     cin>>num;
+    if(num==0) {
+        cout<<0<<endl<<0<<endl;//直接處理0
+        return 0;
+    }
     int binary[8]={0};
     int base=128; //the base of binary
     int order=0; //indicating the digit of the array
